@@ -1,0 +1,11 @@
+/* This is Example of External CSS */
+/* Effet will be shown on h1 tag. */
+h1{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-style: italic;
+}
+p{
+    background-color:aquamarine !important;
+    /* text-align: center; */
+    
+}
