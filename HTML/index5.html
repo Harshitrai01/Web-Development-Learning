@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+</head>
+
+<body>
+    <form>
+        <fieldset>
+            <legend>HTML Form </legend>
+            <fieldset>
+                <legend>Personal Details:</legend>
+                <!-- By default input field is text -->
+                <label for="fname">First Name:</label>
+                <input type="text" id="fname" name="fname" placeholder="First Name">
+                <br><br>
+
+                <label for="lname">Last Name:</label>
+                <input type="text" name="lname" id="lname" placeholder="Last Name">
+                <br><br>
+
+                <label for="dob">DOB:</label>
+                <input type="date" name="date" id="date" max="2023-12-31" min="2001-01-01">
+                <br><br>
+
+                <label for="img">Upload Photo:</label>
+                <input type="image" name="img" id="img" alt="Submit" scr="img.png">
+                <br><br>
+
+                <label for="resume">Upload Resume:</label>
+                <input type="file" name="file" id="file">
+                <br><br>
+
+                <label for="num">Contact:</label>
+                <input type="tel" name="num" id="num" placeholder="Contact" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}">
+                <br><br>
+
+                <label for="Experience">Enter Experience:</label>
+                <input type="range" id="Experience" name="Experience" min="0" max="5">
+                <br>
+            </fieldset>
+            <br>
+
+            <fieldset>
+                <legend>Authentication Details:</legend>
+                <label for="user">User Name: </label>
+                <input type="text" name="user" id="user" placeholder="Enter UserName">
+                <br><br>
+
+                <label for="email">Email:</label>
+                <input type="email" name="email" id="email" placeholder="Enter Email">
+                <br><br>
+
+                <label for="pass">Password: </label>
+                <input type="password" name="pass" id="pass" placeholder="Enter Password">
+                <br>
+            </fieldset>
+            <br>
+            <fieldset>
+                <legend>Other Section:</legend>
+                <fieldset>
+                    <legend>Select Favourite Language</legend>
+                    <label for="html">HTML</label>
+                    <input type="radio" name="fav_lang" id="html">
+                    <br>
+
+                    <label for="css">CSS</label>
+                    <input type="radio" name="fav_lang" id="css">
+                    <br>
+
+                    <label for="js">JS</label>
+                    <input type="radio" name="fav_lang" id="js">
+
+                </fieldset>
+                <br>
+
+                <label for="car">I have a Car</label>
+                <input type="checkbox" name="Car" id="car" value="car">
+                <br>
+
+                <label for="bike">I have a Bike</label>
+                <input type="checkbox" name="Bike" id="bike" value="bike">
+                <br>
+
+                <label for="cycle">I have a Cycle</label>
+                <input type="checkbox" name="Cycle" id="cycle" value="cycle">
+                <br> <br>
+
+                <label for="course">Select Course</label>
+                <select name="course" id="course">
+                    <option value="Physcis">Physics</option>
+                    <option value="Chemistry">Chemistry</option>
+                    <option value="Maths">Maths</option>
+                </select>
+                <br><br>
+
+                <textarea name="textArea2" id="text1" cols="15" rows="3" placeholder="Enter Text"></textarea>
+                <br><br>
+
+                <label for="browsers">Enter Browser</label>
+                <input list="browsers" placeholder="Select Browser">
+                <datalist id="browsers">
+                    <option value="Internet Explorer">
+                    <option value="Firefox">
+                    <option value="Chrome">
+                    <option value="Opera">
+                    <option value="Safari">
+                </datalist>
+                <br><br>
+
+                <label for="favcolor">Favorite color:</label>
+                <input type="color" id="favcolor" name="favcolor">
+                <br><br>
+
+                <button type="button" onclick="alert('Please Fill the Form')">Click Me</button>
+                <br><br>
+
+                <!-- Reset All Values -->
+                <input type="reset" name="reset" id="reset" value="Reset All">
+                <br><br>
+
+                <input type="submit" name="submit" id="submit" value="Click To Submit">
+            </fieldset>
+        </fieldset>
+
+        <fieldset>
+            <legend><h3>Frequently Asked Questions</h3></legend>
+            <details>
+                <summary>About Our Comapny</summary>
+                <p>It is the best Comapny in India.</p>
+            </details>
+
+            <details>
+                <summary>How I will get my subscription.</summary>
+                <p>You will get it by paying 10000 rupees.</p>
+            </details>
+
+            <details>
+                <summary>How you did this?</summary>
+                <p>By use of details tag in html.</p>
+            </details>
+
+        </fieldset>
+    </form>
+</body>
+
+</html>
