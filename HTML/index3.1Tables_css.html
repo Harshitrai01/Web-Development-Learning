@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+
+    <style>
+        table,td,tr,th{
+            border: 2px solid red;
+
+            /* All borders are collapsed and form only one border */
+            border-collapse: collapse;
+            text-align: center;
+        }
+    </style>
+
+</head>
+<body>
+    <h4>Table 1</h4>
+    <table>
+        <!-- Caption is used to give title to the table -->
+        <caption style="background-color: yellow;">Student Details</caption>
+
+        <!-- Used to deal with columns -->
+        <colgroup>
+            <col span="" style="background-color: aqua;">
+            <col span="" style="background-color: lightgreen;">
+            <col span="" style="background-color: lightsalmon;">
+            <col span="" style="background-color: lightpink;">
+        </colgroup>
+
+        <thead>
+            <th>Student_Id</th>
+            <th>Student Name</th>
+            <th>Gender</th>
+            <th>Age</th>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td>123</td>
+                <td colspan="3">Bill</td>
+            </tr>
+            <tr>
+                <td>453</td>
+                <td>Jhon</td>
+                <td>Male</td>
+                <td rowspan="3">22</td>
+            </tr>
+            <tr>
+                <td>362</td>
+                <td>Sia</td>
+                <td>Female</td>
+
+            </tr>
+            <tr>
+                <td>897</td>
+                <td>Zens</td>
+                <td>Male</td>
+
+            </tr>
+        </tbody>
+
+    </table>
+
+    <h4>Table 2</h4>
+    <table>
+        <!-- Caption is used to give title to the table -->
+        <caption style="background-color: yellow;">Student Details</caption>
+
+        <!-- Used to deal with columns -->
+        <colgroup>
+            <col span="1">
+            <col span="1" style="background-color: yellow;">
+            <col span="1" style="background-color: rgb(47, 114, 213);">
+
+            <!-- visibility: collapse means column is hidden -->
+            <col span="1" style="visibility: collapse;">
+
+        </colgroup>
+
+        <thead>
+            <th>Student_Id</th>
+            <th>Student Name</th>
+            <th>Gender</th>
+            <th>Age</th>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td>123</td>
+                <td colspan="3">Bill</td>
+            </tr>
+            <tr>
+                <td>453</td>
+                <td>Jhon</td>
+                <td>Male</td>
+                <td rowspan="3">22</td>
+            </tr>
+            <tr>
+                <td>362</td>
+                <td>Sia</td>
+                <td>Female</td>
+
+            </tr>
+            <tr>
+                <td>897</td>
+                <td>Zens</td>
+                <td>Male</td>
+
+            </tr>
+        </tbody>
+
+    </table>
+</body>
+</html>
