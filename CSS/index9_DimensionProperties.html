@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Document</title>
+    <style>
+        .div1 {
+            border: 2px solid black;
+            /* Size of div will be increase to only max height. */
+            /* It can handle elements till max height, after that there will be over flow. */
+            max-height: 120px;
+            max-width: 500px;
+            /* Handling the overflowed text */
+            overflow: scroll;
+            /* overflow: auto;
+            overflow: hidden;
+            overflow: visible; 
+            If overflow aut-scroll else auto-visible.*/
+        }
+
+        .div2 {
+            /* If content size is less than minimum height. Then block height is minimum height. */
+            /* If content size > minimum height. block size will increase automatically. */
+            border: 2px solid black;
+            margin: 10px;
+            min-height: 100px;
+            min-width: 200px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="div1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis consequatur sit eligendi vel
+        dicta asperiores. Quam temporibus debitis excepturi quis velit incidunt necessitatibus recusandae perspiciatis,
+        illum et voluptates ratione nihil, ut obcaecati doloribus dignissimos minima, fugiat aspernatur provident. Magni
+        minima pariatur dignissimos aliquid voluptatem hic consequatur, qui blanditiis aperiam temporibus corporis
+        officiis neque quisquam nihil eum, eveniet a ducimus nostrum maxime dolor dolorum quas distinctio obcaecati
+        placeat. Harum odit laudantium alias, incidunt soluta error ut atque qui accusamus esse, voluptate, tempore
+        velit ipsam debitis impedit quia? Nesciunt veniam necessitatibus eveniet facilis dolor ipsam autem pariatur
+        ullam, voluptatem voluptate qui quis atque eum, officia nemo quidem dignissimos sunt, voluptas non. Magnam,
+        minima. Cupiditate accusantium doloremque officiis iusto labore ab quaerat molestias non dignissimos blanditiis
+        assumenda incidunt, eveniet.</div>
+
+    <div class="div2">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nihil, aliquid. Lorem, ipsum dolor sit
+        amet consectetur adipisicing elit. Necessitatibus quas blanditiis voluptate voluptatibus quaerat laudantium
+        harum fuga praesentium eum, impedit ab, voluptates, illo obcaecati dignissimos error id repellendus laboriosam
+        eius! Repellendus odit dolorum dicta consequuntur, omnis, maiores explicabo sequi, et aspernatur repudiandae
+        error. Cumque obcaecati quibusdam repudiandae. Sunt vel eos minus eius sapiente illo animi sed quis excepturi.
+        Non, voluptatibus veniam.</div>
+</body>
+
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    <style>
+        /* This is for text shadow. */
+        #h1{
+            /* x,y,blur,spread radius - blur & spread radius is an optional */
+            /* spread radius increases the shadow intensity. */
+            text-shadow: 3px 3px 3px red;
+        }
+        #h2{
+            text-shadow: 3px 3px 3px red, 6px 10px 6px green;
+        }
+        #h3{
+            text-shadow: 3px 3px red;
+        }
+
+        /* This is for box shadow */
+        .box{
+            /* background-color: aqua; */
+            height: 200px;
+            width: 200px;
+            margin: 40px;
+
+            /* x,y,blur,spread radius - blur & spread radius is an optional */
+            /* Giving shadow to box. */
+            /* spread radius increases the shadow intensity on opp side. */
+            box-shadow: 6px 6px 25px 10px #0a0af57a;
+        }
+        #div1{
+            background-color: red;
+            /* Giving shadow to box. Blur value is an optional.*/
+            box-shadow: 8px 8px 8px orange, 15px 15px 10px yellow;
+        }
+        #div3{
+            /* By applying negative sign we can change direction. */
+            box-shadow: -8px -8px 8px 10px orange, -15px -15px 8px 10px yellow;
+        }
+    </style>
+</head>
+<body>
+    <h1 id="h1">This is my heading.</h1>
+    <h1 id="h2">This is my heading.</h1>
+    <h1 id="h3">This is my heading.</h1>
+
+    <div class="box"></div>
+    <div class="box" id="div1"></div>
+    <div class="box" id="div3"></div>
+    
+</body>
+</html>

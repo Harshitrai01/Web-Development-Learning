@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Transforms allows to move, rotate, scale and skew elements. -->
+    <title>Transforms</title>
+    <style>
+        .box {
+            background-color: aqua;
+            margin: 90px;
+            width: 70px;
+        }
+
+        #div1 {
+            /* translate(x,y) - moves towards x and y.*/
+            transform: translate(50px, 50px);
+        }
+
+        #div2 {
+            background-color: blueviolet;
+            transform: rotate(-45deg);
+        }
+
+        #div3 {
+            background-color: orange;
+            transform: scale(1.2, 3);
+        }
+
+        #div4 {
+            background-color: lightgreen;
+            transform: skew(-45deg);
+        }
+
+        #div5 {
+            /* The values represent the following functions: matrix(scaleX(), skewY(), skewX(), scaleY(), translateX(), translateY()) */
+            /* Defines a homogeneous 2D transformation matrix. */
+            background-color: bisque;
+            transform: matrix(1, 2, -1, 1, 80, 80);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box" id="div1">ABCD</div>
+    <div class="box" id="div2">ABCD</div>
+    <div class="box" id="div3">ABCD</div>
+    <div class="box" id="div4">ABCD</div>
+    <div class="box" id="div5">ABCD</div>
+
+</body>
+
+</html>

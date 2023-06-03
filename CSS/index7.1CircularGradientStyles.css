@@ -1,0 +1,51 @@
+.box{
+    border: 1px solid black;
+    width: 200px;
+    height: 200px;
+    margin: 10px;
+}
+#div1{
+    background-image: radial-gradient(red,blue);
+}
+#div2{
+    background-image: radial-gradient(circle,yellow,orange, red, lightgreen,skyblue);
+    border-radius: 50%;
+}
+#div3{
+    background-image: radial-gradient(circle,yellow 10%,orange 30%, red 60%);
+}
+#div10{
+    background-image: radial-gradient(closest-side at 60% 55%, blue, green, yellow, black); 
+}
+#div11{
+    background-image: radial-gradient(farthest-side at 60% 55%, blue, green, yellow, black);
+}
+#div12{
+    background-image: radial-gradient(closest-corner at 60% 55%, blue, green, yellow, black);
+}
+
+/* Conic Gradient Example */
+
+#div4{
+    background-image: conic-gradient(red,yellow,green,blue,pink);
+}
+#div5{
+    /* A conic gradient with three colors and a degree for each color: */
+    background-image: conic-gradient(red 45deg, yellow 90deg, green 210deg);
+}
+#div6{
+    background-image: conic-gradient(red,yellow,green);
+    border-radius: 50%;
+}
+#div7{
+    background-image: repeating-conic-gradient(red 10%, yellow 20%);
+    border-radius: 50%;
+}
+#div8{
+    background-image: conic-gradient(from 90deg, red, yellow, green);
+    border-radius: 50%;
+}
+#div9{
+    background-image: conic-gradient(red 0deg, red 90deg, yellow 90deg, yellow 180deg, green 180deg, green 270deg, blue 270deg);
+    border-radius: 50%;
+}

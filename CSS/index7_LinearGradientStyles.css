@@ -1,0 +1,42 @@
+.box{
+    border: 2px solid black;
+    height: 100px;
+    width: 180px;
+
+    /* Applying Linear Gradient */
+    /* background-image: linear-gradient(red,blue); to bottom*/
+}
+#div1{
+    background-image: linear-gradient(to right, red, yellow);
+}
+#div2{
+    background-image: linear-gradient(to left, red, yellow);
+}
+#div3{
+    background-image: linear-gradient(to top, red, yellow);
+}
+#div4{
+    background-image: linear-gradient(to bottom, orange, white,green);
+}
+#div5{
+    /* We can use three colors also. */
+    background-image: linear-gradient(to bottom right, orange, white,green);
+}
+#div6{
+    /* You can use as many colors you want */
+    background-image: linear-gradient(to bottom left, #8F00FF, indigo, blue, green, yellow, orange, red);
+}
+#div7{
+    background-image: linear-gradient(to top right, red, yellow);
+}
+#div8{
+    background-image: linear-gradient(to top left, red, yellow);
+}
+#div9{
+    /* Giving Direction via degree */
+    background-image: linear-gradient(45deg,orange,white,green);
+}
+#div10{
+    /* Using transparency value in rgba */
+    background-image: linear-gradient(to bottom, rgba(255,0,0,0),rgba(0,0,255,1));
+}
