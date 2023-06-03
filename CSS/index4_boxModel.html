@@ -1,19 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <title>Document</title>
+    <!-- Box Model states that every thing rendered is in form of rectangle. -->
+    <!-- It has for elements:-
+        1.Content - Inner most layer.
+        2.Padding - Space b/w content and border.
+        3.Border
+        4.Margin - Gaps b/w two boxes.
+    -->
+    <!-- Best practice:
+            In universal selector set all margins and padding equals to zero. 
+    -->
 
     <style>
-        .box{
+        /* Margin and Padding zero in universal selectors. */
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+        .box {
             height: 70px;
             width: 200px;
             border: 2px solid black;
 
-            margin: 5px;
+            margin: 20px;
             /* margin-top: 5px;
             margin-bottom: 5px;
             margin-left: 5px;
             margin-right: 5px; */
+
+            /* Short hand method for margin  for all directions*/
+            /* padding : top right bottom left */
+            /* margin: 10px 20px 30px 40px */
+
+            /* margin: x-axis(top and bottom) y-axis(left and right); */
+            /* margin: 10px 20px */
 
             /* Padding is within the border */
             padding: 10px;
@@ -22,27 +45,62 @@
             padding-right: 10px;
             padding-bottom: 10px; */
 
+            /* Short hand method for padding  for all directions*/
+            /* padding : top right bottom left */
+            /* padding : 15px 10px 15px 25px; */
+
+            /* padding: x-axis(top and bottom) y-axis(left and right); */
+            /* padding: 5px 10px */
+
+
             /* Padding will not increase the size of the box. */
             /* When you write this content of box becomes small and padding space created. */
             /* When you dont include this, content size remains same and padding increases so box size increases. */
             box-sizing: border-box;
 
         }
-        #org{
+
+        #org {
             background-color: orange;
         }
-        #wht{
+
+        #wht {
             background-color: white;
         }
-        #grn{
+
+        #grn {
             background-color: green;
+        }
+        #para1{
+            border: 2px solid black;
+            background-color: lightgoldenrodyellow;
+            width: 400px;
+            padding: 20px 20px;
+            box-sizing: border-box;
+
+            margin: 10px 20px 30px 40px;
+            /* margin: 10px 20px; */
         }
     </style>
 
 </head>
+
 <body>
-    <div class="box" id="org">A</div>
-    <div class="box" id="wht">B</div>
-    <div class="box" id="grn">C</div>
+    <div>
+        <div class="box" id="org">A</div>
+        <div class="box" id="wht">B</div>
+        <div class="box" id="grn">C</div>
+    </div>
+    <br>
+    <div>
+
+        <p id="para1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident pariatur vitae, saepe tenetur
+            sunt unde ipsa eos maxime voluptatem maiores a odio animi exercitationem culpa atque aperiam delectus ex,
+            consectetur nulla corrupti impedit molestiae facere. Expedita, labore. Molestiae dolores beatae quod
+            obcaecati? Dolorum cum illum distinctio et ut culpa, tempore voluptate quis in error expedita beatae
+            temporibus veritatis dicta fugit.</p>
+    </div>
+
 </body>
+
 </html>
