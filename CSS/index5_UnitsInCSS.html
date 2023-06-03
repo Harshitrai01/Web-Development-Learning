@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Document</title>
+    <style>
+        .div1{
+            background-color: rgb(96, 164, 187);
+            height: 200px;
+            width: 500px;
+            padding: 10px;
+            box-sizing: border-box;
+        }
+        .div2{
+            background-color: rgb(235, 59, 73);
+            width: 50%;
+            height: 50%;
+        }
+        #div3{
+            background-color: aqua;
+            /* In 50 value it is taking 50/100 means 50% of view port. */
+            height: 50vh;
+            width: 50vw;
+        }
+    </style>
+</head>
+
+<body>
+    <h3>Units in CSS</h3>
+    <ol>
+        <li>Absolute Unit - Size of image is fixed on any device (either phone or laptop).
+            <ul>
+                <li>mm</li>
+                <li>cm</li>
+                <li>in</li>
+                <li>px</li>
+            </ul>
+            
+        </li>
+
+        <li>Percentage Unit
+            <ul>
+                <li>div{ width:10%; } - This width is applied on parents pixel.</li>
+                Suppose div is inside a parent having width = 500px. So width of div will be 10% of 500=50px.
+            </ul>
+        </li>
+
+        <li>Relative Unit
+            <ol>
+                <li>Relative to Font Size
+                    <ul>
+                        <li>em - Relative to parent element font size. </li> 
+                            If parent font size is 8px. Then 2em will be equal to 2*8=16px.
+                        <li>rem - Relative to root element that is html.</li>
+                    </ul>
+                </li>
+                <li>Relative to Document/View Port
+                    All area which is visible is viewport.
+                    <ul>
+                        <li>vw - 1/100 th of view port width.</li>
+                        <li>vh - 1/100 th of view port height</li>
+                    </ul>
+                </li>
+            </ol>
+
+        </li>
+
+    </ol>
+
+    <h3>Example of Percentage Unit</h3>
+    <div class="div1">
+
+        <div class="div2">
+
+        </div>
+
+    </div>
+
+    <h3>Example of Viewport - It is relative to whole viewsize of pc.</h3>
+    <div id="div3"></div>
+</body>
+
+</html>

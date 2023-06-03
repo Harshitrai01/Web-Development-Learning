@@ -3,12 +3,13 @@
 
 <head>
     <style>
+        /* Element Selector or Tag Selectors */
         p {
             color: brown;
         }
 
-        /* Unique id can be assigned to unique elements. */
-        /* To assign same color to multiple elements we use CLASS. */
+        /* Unique id can be assigned to unique elements. id determines the element uniquely.*/
+        /* To assign same properties (color) to multiple elements we use CLASS. */
 
         /* id selectors are used with # */
         #para1 {
@@ -25,6 +26,7 @@
             color: darkblue;
         }
 
+        /* Multiple Selector of Grouping Selector-We are using multiple selector */
         /* Group Selector - Selecting multiple elements together */
         p,article{
             width: 1000px;
@@ -36,6 +38,38 @@
         p.paraClass{
             text-align: center;
         }
+
+        /* Pseudo Class Selector */
+        /* In pseudo class selector, we select the special state of the element.Pseudoclass is special state of an element */
+        /* Here the special state of element button is hover. On hovering on button following properties are executed. */
+        button:hover{
+            color: red;
+        }
+        a:hover{
+            color: green;
+            background-color: aquamarine;
+            font-size: larger;
+        }
+        /* Selecting Pseudo class by class and id */
+        #button1:hover{
+            color: blue;
+            background-color: yellow;
+            border: 2px solid red;
+            font-size: large;
+            font-family: cursive;
+        }
+        .button2:hover{
+            color: blue;
+            background-color: yellow;
+            border: 2px solid red;
+        }
+
+        /* Some More types of selecter to search
+        1. Universal Selector
+        2. Nested Selector
+        3. Attribute Selector
+         */
+         
     </style>
 </head>
 
@@ -65,7 +99,12 @@
         quo. Facere, inventore ipsa velit explicabo corporis illum quibusdam vitae suscipit qui neque aperiam
         dignissimos saepe esse sunt ducimus magni sit.</p>
 
+    <button id="first-button">Sumbit</button> <br> <br>
+    <a href="https://www.thecodehelp.in" target="_blank">CodeHelp</a> <br> <br>
 
+    <!-- Selecting Pseudo Class By Id and class -->
+    <button id="button1" class="button2">Click Here</button>
+    
 
 
 
