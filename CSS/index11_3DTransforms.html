@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>3D Transforms</title>
+        <style>
+            div{
+                background-color: aqua;
+                border: 1px solid black;
+                height: 100px;
+                width: 100px;
+                margin: 30px;
+            }
+            .translated{
+                /* Goes -10 inside the screen. */
+                transform: perspective(15px) translateZ(-10px);
+                /* transform: perspective(15px) translateZ(10px); */
+            }
+            .scaled{
+                margin-left: 400px;
+                transform: rotateZ(30px);
+                transform: perspective(300px) scaleZ(5) rotateX(0deg) rotateY(50deg);
+            }
+        </style>
+    </head>
+    <body>
+        <div class="static">Static</div>
+        <div class="translated">Translate</div>
+        <div class="scaled">Scaled</div>
+    </body>
+</html>

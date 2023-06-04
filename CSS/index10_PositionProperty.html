@@ -5,9 +5,65 @@
         1.Static 2.Relative 3.Fixed 4.Absolute 5.Sticky 
     -->
     <title>Position Properties</title>
+    <!-- Static is by default proerty. Works in order as you insert. -->
+    <style>
+        p{
+            position: static;
+        }
+        /* Relative Postioning */
+        /* An element with position:relative; is positioned relative to its normal position. */
+        div{
+            background-color: aqua;
+            border: 1px solid black;
+            display: inline-block;
+            width: 150px;
+            height: 150px;
+        }
+        #div3{
+            /* Changes relative to original positon. */
+            position: relative;
+            top: 50px;
+            left: 50px;
+            /* right:50px;
+            bottom: 50px; */
+        }
+        /* Fixed Positon - Relative to viewpoert(browser). means always stays at same place.*/
+        .wrapper{
+            background-color: yellow;
+            width: 100vw;
+            height: 1000px;
+        }
+        /* #div1{
+            position: fixed;
+        } */
+        #div4{
+            /* absolute is relative to nearest positioned ancesstor. */
+            position: absolute;
+            top: 500px;
+            left: 500px;
+            /* right:50px;
+            bottom: 50px; */
+        }
+        #div1{
+            /* Sticky - behaves as relative and fixed */
+            position: sticky;
+            top: 20px;
+        }
 
+    </style>
 </head>
 <body>
+
+    <h2>Static Position</h2>
+    <p>This is a para.</p>
+
+    <div class="wrapper">
+        <div class="box" id="div1">Sticky</div>
+        <div class="box" id="div2">Fixed</div>
+        <div class="box" id="div3">Relative</div>
+        <div class="box" id="div4">Absolute</div>
+    </div>
     
+
 </body>
 </html>
