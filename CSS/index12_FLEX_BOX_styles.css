@@ -1,0 +1,97 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* Flex Container Properties */
+.container{
+    height: 400px;
+    border: 2px solid green;
+
+    /* Making the container as a flex. */
+    display: flex;
+
+    /* Changing direction of main axis. */
+    /* flex-direction: column;
+    flex-direction: row;
+    flex-direction: row-reverse;
+    flex-direction: column-reverse; */
+
+    /* Preversing the width on shrinking. Box will shift on next line.*/
+    /* flex-wrap: nowrap; default*/
+    flex-wrap: wrap;
+    /* flex-wrap: wrap-reverse; It will go in up direction. */
+
+    /* Flex Flow is short hand property for direction and wrap. */
+    flex-flow: row wrap;
+
+    /* Justify Content - For Allignment of items on main axis.(x-axis) */
+
+    /* justify-content: flex-start;
+    justify-content: flex-end;
+    justify-content: space-around;
+    justify-content: space-between;
+    justify-content: space-evenly; */
+    justify-content: center;
+
+    /* Allign items. For Allignment of items on Cross axis (y axis)*/
+    /* align-items: flex-start;
+    align-items: flex-end;
+    align-items: stretch;
+    /* baseline matches when content size is different. */
+    /* align-items: baseline; */
+    align-items: center;
+
+    /* To generate gap b/w boxes. Distributes evenly. */
+    /* gap: 10px; */
+
+    /* align content - used to handle spacing between the rows */
+    /* align-content: flex-start; */
+    /* align-content: flex-end; */
+    /* align-content: baseline; */
+    /* align-content: space-around; */
+    /* align-content: space-between; */
+    /* align-content: space-evenly; */
+    /* align-content: center; */
+
+}
+/* Flext item Properties */
+.box{
+    border: 1px solid brown;
+    background-color: aqua;
+    width: 100px;
+
+    /* Takes available space equally. Growing speed of boxes. */
+    /* flex-grow: 1;  */
+
+    /* Shrinking speed of the boxes. Box shrinks fastly. */
+    /* flex-shrink: 4; */
+
+    /* Sets the width of boxes. Width Increases according to content.*/
+    /* But due to width it goes over-flowed. */
+    flex-basis: 100px;
+
+    /* flex is a short hand for 1.order 2.grow 3.shring 4.basis */
+    /* flex: 1 2 3 100px; */
+
+    /* Align Self - Used to allign specific boxes. */
+}
+
+/* By default initial ordering is zero. 
+    Ordering changes the positions of the blocks. */
+#box1{
+    /* Higher the order, higher priority on right side. */
+    order: 1;
+
+    /* flex-grow: 1; */
+    /* flex-shrink: 4; */
+    /* align-self: flex-start; */
+}
+#box2{
+    order: 2;
+    /* align-self: stretch; */
+}
+#box3{
+    order: 3;
+    /* align-self: flex-end; */
+}

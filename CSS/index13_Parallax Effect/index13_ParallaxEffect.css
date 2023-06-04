@@ -1,0 +1,99 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.wrapper{
+    height: 100vh;
+    /* To avoid overflow of image from scrolling. */
+    overflow-x: hidden;
+    overflow-y: auto;
+    /* For 3D defining we on persepective */
+    perspective: 10px;
+}
+
+.container{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    /* To prsereve 3d style. */
+    transform-style: preserve-3d;
+    /* For overlapping which layers come above which layer. */
+    z-index: -1;
+}
+.background{
+    /* More Distance Less Speed -60px */
+    transform: translateZ(-40px) scale(5);
+}
+.foreground{
+    transform: translateZ(-20px) scale(3.13);
+}
+
+.background,.foreground{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    /* Again z index for layering. If not given adventure will be below. */
+    z-index: -1;
+    /* Will Cover whole width */
+    object-fit: cover;
+}
+h1{
+    position: absolute;
+    top: 9rem;
+    /* transform: translateX(-50%); */
+    font-size: 7rem;
+    letter-spacing: 4px;
+    color: white;
+    text-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+h2{
+    display: flex;
+    font-size: 3rem;
+    position: relative;
+    left: 11%;
+}
+section{
+    background-color: rgb(45,45,45);
+    color: white;
+    padding: 5rem 0;
+}
+.secHeading{
+    font-size: 5rem;
+    padding: 0 10rem;
+}
+.text{
+    font-size: 1.5rem;
+    padding: 0 10rem;
+    margin: 5rem 0;
+}
+.desc{
+    position: absolute;
+    background-color: white;
+    padding: 0.5rem 2.5rem;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    color: black;
+    font-size: 3.5rem;
+    font-weight: 600;
+}
+.bg{
+    position: relative;
+    width: 100%;
+    background-attachment: fixed; 
+    background-size: cover;
+    background-position: center;
+    height: 500px;
+}
+.bg1{
+    background-image: url(sport1.png);
+}
+.bg2{
+    background-image: url(sport2.png);
+}
+.bg3{
+    background-image: url(sport3.png);
+}
