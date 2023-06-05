@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .container{
+            background-color: brown;
+            border: 2px solid black;
+            height: 500px;
+            display: grid;
+
+            /* grid-template-columns: 200px 200px 210px; */
+
+            /* grid-template-columns: 1fr 1fr 1fr; */
+            /* grid-template-columns: 200px repeat(3,1fr) 100px; */
+            grid-template-columns:150px 1fr 1fr 150px;
+            /* grid-template-rows: 90px 90px 90px 90px;  */
+            grid-template-rows: 40px 1fr 30px;
+
+            gap:3px;
+        }
+        #box1,#box5{
+            /* grid-column-start: 1;
+            grid-column-end: 5; */
+            /* Short Hand Properties. */
+            grid-column: 1 / span 4;
+        }
+        #box3{
+            grid-column-start: 2;
+            grid-column-end: 4;
+        }
+        #box4{
+            grid-column-start: 4;
+            grid-column-end: 5;
+        }
+        .box{
+            background-color: aqua;
+            border: 1px solid blue;
+            /* width: 80px; */
+            /* height: 80px; */
+        }
+        /* Some Properties
+            1.Justify Content
+            2.Align Content
+            3.Justify-self
+            4.Justify items
+            5.Align Items
+            6.Align Self
+            7.Place items
+            8.Place Self
+        */
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box" id="box1">box1</div>
+        <div class="box" id="box2">box2</div>
+        <div class="box" id="box3">box3</div>
+        <div class="box" id="box4">box4</div>
+        <div class="box" id="box5">box5</div>
+        <!-- <div class="box">box6</div>
+        <div class="box">box7</div>
+        <div class="box">box8</div>
+        <div class="box">box9</div>
+        <div class="box">box10</div> -->
+        
+    </div>
+</body>
+</html>
