@@ -76,6 +76,7 @@
 
     /* Align Self - Used to allign specific boxes. */
 }
+/* Allign Self and Justify self is used on grid items. */
 
 /* By default initial ordering is zero. 
     Ordering changes the positions of the blocks. */
@@ -83,12 +84,17 @@
     /* Higher the order, higher priority on right side. */
     order: 1;
 
+    /* justify-self: start; */
     /* flex-grow: 1; */
     /* flex-shrink: 4; */
     /* align-self: flex-start; */
 }
 #box2{
     order: 2;
+    /* For horizontal axis on items. */
+    /* justify-self: end; */
+
+    /* For vertical axis on items */
     /* align-self: stretch; */
 }
 #box3{
